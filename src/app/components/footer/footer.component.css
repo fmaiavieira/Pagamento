@@ -1,0 +1,15 @@
+/*Definindo tamanho do footer e cor de fundo*/
+.rodape{
+    background-color: #76c15c;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;font-family: 'Fredoka One';
+    color: #ffffff;
+    font-size: 1vh;
+}
+/*Definindo tamanho da fonte*/
+.direitos{
+    font-size: 2em;
+}

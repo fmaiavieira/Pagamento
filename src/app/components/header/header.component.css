@@ -1,0 +1,21 @@
+/*Definindo tamanho do header e cor de fundo*/
+header{
+    background-color:#2472cf;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;font-family: 'Fredoka One';
+    color: #ffffff;
+    font-size: 6vh;
+}
+/*Definindo Cor principal do logo e tamanho da fonte*/
+.logo{
+    font-family: 'Fredoka One';
+    color: #ffffff;
+    font-size: 1em;
+}
+/*Definindo Cor secundaria do logo*/
+.logoVerde{
+    color: #76c15c;
+}
