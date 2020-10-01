@@ -1,4 +1,52 @@
+/* definindo tamanho e cor de fundo da sessão de listagem de pagamentos */
 .listagemDePagamentos{
     background-color: #d9d9d9;
-    height: 80vh;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* definindo cor e tamanho da div's de pagamentos */
+.listaDeUsuarios{
+    background-color: #ffffff;
+    width: 60vw;
+    height: 15vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom:2%;
+}
+
+/* definindo tamanho das div's de imagem do usuario */
+.imagem{
+    width: 20%;
+    min-width: 130px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* definindo tamanho das div's de informações do usuario */
+.informacoes{
+    width: 50%;
+}
+
+/* definindo tamanho das div's do botão de pagamento */
+.botao{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+/* difinindo estilo das imagens dos usuarios */
+.imagemDoUsusario{
+    border-radius: 50%;
+    margin-left: 1.7vh;
 }
