@@ -1,0 +1,18 @@
+<div [ngStyle] = "{'display' : !showDisplay ? 'none' : 'flex'}" class="fundoModal">
+    <div  class="modal">
+        <div class="pagamentoPara">
+            <span>Pagamento para: <span id="nomePagamento">{{displays.getUsuarioSelecionado()}}</span></span>
+            <button (click)="closeModalBtn()">X</button>
+        </div>
+        <div id="DadosCartao">
+            <input (keyup)="maskSearch($event)" (keydown)="maskSearchDown($event)" [(ngModel)]="q" id="valor" type="text" placeholder="R$ 0,00" required>
+
+            <select id="cartao" [(ngModel)]="card" required>
+                    <option *ngFor="let card of cards" [ngValue]="card">Cartão com final {{card.card_number.slice(12,16)}}</option>
+            </select>
+
+            <button (click)="enviarPagamento()" id="botaoPagar">Pagar</button>
+
+        </div>
+    </div>
+</div>

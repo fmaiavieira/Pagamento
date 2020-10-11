@@ -5,13 +5,12 @@ header{
     height: 10vh;
     display: flex;
     justify-content: center;
-    align-items: center;font-family: 'Fredoka One';
+    align-items: center;
     color: #ffffff;
     font-size: 6vh;
 }
 /*Definindo Cor principal do logo e tamanho da fonte*/
 .logo{
-    font-family: 'Fredoka One';
     color: #ffffff;
     font-size: 1em;
 }

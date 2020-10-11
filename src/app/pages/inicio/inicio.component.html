@@ -1,22 +1,25 @@
 <!-- incluindo o header na pagina inicial -->
+<app-modal></app-modal>
 <app-header></app-header>
+<app-modal-aprovado-recusado></app-modal-aprovado-recusado>
 
 <!-- sessão de listagem de pagamentos -->
 <section  class="listagemDePagamentos">
-    <div *ngFor="let dado of dados" class="listaDeUsuarios">
+    
+    <div *ngFor="let dado of usuarios" class="listaDeUsuarios">
         <div class="imagem">
             <img class="imagemDoUsusario" [src]="dado.img" height="80%" alt="">
         </div>
           
         <div class="informacoes">
-            <p id="nomeDoUsuario">{{dado.name}}</p>
+            <p id="nomeDoUsuario"  >{{dado.name}}</p>
             <span>
                 <p id="id">ID:{{dado.id}}</p>
                 <p id="Username">Username: {{dado.username}}</p>
             </span>
         </div> 
         <div class="botao">
-            <button>
+            <button (click)="showModalBtn(dado)">
                 Pagar
             </button>
         </div>
