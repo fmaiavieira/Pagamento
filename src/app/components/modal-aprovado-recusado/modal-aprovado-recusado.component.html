@@ -1,7 +1,8 @@
-<div class="fundoModal" [ngStyle] = "{'display' : !valorModal ? 'none' : 'flex'}">
+<div class="fundoModal" [ngStyle] = "{'display' : !showDisplayModal ? 'none' : 'flex'}">
     <div  class="modal">
         <div class="recibo">
             <h2>Recibo de pagamento</h2>
+            <button (click)="closeModalAprovado()">X</button>
         </div>
         <div id="resultadoPagamento">
             <h2>O pagamento foi concluido com sucesso.</h2>

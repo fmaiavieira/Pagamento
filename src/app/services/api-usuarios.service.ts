@@ -28,6 +28,7 @@ export class ApiUsuariosService {
     this.httpService.post( this.validacaoApi , cards).subscribe(resultado => {
             console.log(resultado)
             this.aprovadoRecusado = resultado
+            return resultado
           },erro => {
             if(erro.status == 400) {
               console.log(erro);

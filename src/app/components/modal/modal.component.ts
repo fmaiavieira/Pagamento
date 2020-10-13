@@ -39,10 +39,21 @@ export class ModalComponent implements OnInit {
     },
   ];
 
+  valorModalAprovado = true
+  
   enviarPagamento(){
     console.log(this.card)
-    this.apiUsuarios.analisarPagamento(this.card);
-    this.displays.mudarValorModal(true);
+    this.apiUsuarios.analisarPagamento(this.card)
+    this.abrirModalAprovada();
+
+  }
+
+  abrirModalAprovada(){
+    if(this.apiUsuarios.aprovadoRecusado.status === "Aprovada"){
+      this.valorModalAprovado = this.valorModalAprovado
+      console.log("showAprovado")
+      this.displays.mudarValorModal(this.valorModalAprovado)
+    }
   }
 
   q: any;

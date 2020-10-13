@@ -6,17 +6,22 @@ import { Observable, Subject } from 'rxjs'
 })
 export class DisplayModalService {
   showModal:Observable<boolean>
+  showAprovadoModal:Observable<boolean>
 
 
   constructor() {
     this.showSubject = new Subject<boolean>();
+     this.showAprovado = new Subject<boolean>();
     this.showModal = this.showSubject.asObservable();
+    this.showAprovadoModal = this.showAprovado.asObservable();
     this.showSubject.next(false)
+    this.showAprovado.next(false)
    }
 
   usuario_Selecionado:any;
 
   private showSubject: Subject<boolean>
+  private showAprovado: Subject<boolean>
   
   mudarValor(valor, dado) {
     this.showSubject.next(valor)
@@ -25,11 +30,10 @@ export class DisplayModalService {
     return valor
   }
 
-  valorModal = false;
-
   mudarValorModal(valor){
-    this.valorModal = valor
-    console.log(this.valorModal)
+    this.showAprovado.next(valor)
+    console.log("mudarvalorModal")
+    return valor
   }
   
   

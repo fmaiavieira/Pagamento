@@ -8,14 +8,25 @@ import { ApiUsuariosService } from 'src/app/services/api-usuarios.service';
   styleUrls: ['./modal-aprovado-recusado.component.css']
 })
 export class ModalAprovadoRecusadoComponent implements OnInit {
-
-  valorModal = this.displays.valorModal;
-  
+  showDisplayModal:boolean
   constructor(
     public displays: DisplayModalService,
     private apiUsuarios: ApiUsuariosService) { }
 
+    valorModalAprovado = false
+    closeModalAprovado(){
+      this.valorModalAprovado = this.valorModalAprovado
+      console.log("showAprovado")
+      this.displays.mudarValorModal(this.valorModalAprovado)
+    }
+
+
+
+
   ngOnInit(): void { 
+    this.displays.showAprovadoModal.subscribe((valor) => {
+      this.showDisplayModal = valor
+    })
   }
 
 }
