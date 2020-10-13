@@ -81,4 +81,12 @@
     height: 13%;
     font-size: 1.3em;
     font-family: 'Fredoka One';
+    background-color:#76c15c ;
+    border-radius: 50px;
+    border: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
 }

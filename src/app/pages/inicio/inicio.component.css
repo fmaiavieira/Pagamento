@@ -42,6 +42,20 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 5%;
+}
+
+.botao>button{
+    background-color:#76c15c ;
+    border-radius: 50px;
+    border: none;
+    height: 30%;
+    width: 40%;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-family: 'Fredoka One';
+    cursor: pointer;
+    outline: none;
 }
 
 
