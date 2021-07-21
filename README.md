@@ -1,6 +1,6 @@
 # Pagamento
 
-link para vizualização: https://app.netlify.com/sites/pague-ja/overview
+link para vizualização: https://pague-ja.netlify.app/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.3.
 
